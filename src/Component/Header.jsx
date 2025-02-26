@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/logo-2.png";
 import smith from "../assets/slider-img.jpg";
+import shape1 from "../assets/shape1.png";
 import Socials from "./Socials";
 
 const Header = () => {
@@ -43,11 +44,15 @@ const Header = () => {
       </header>
       <section className="flex min-h-[95vh]">
         <div className="w-1/2 bg-white flex flex-col space-y-4 justify-center items-start px-3">
-          <h2 className="text-9xl mt-8 font-bold text-[#2e2e37]">James Smith</h2>
+          <h2 className="text-9xl mt-8 font-bold text-[#2e2e37]">
+            James Smith
+          </h2>
           <p className="text-3xl text-[#555664] mt-2">
             Senior Web Developer and Designer <br /> from the heart of New York
           </p>
-          <button className="mt-6 bg-[#98c949] px-12 py-4 rounded-lg font-bold text-white text-xl">Say Hello</button>
+          <button className="mt-6 bg-[#98c949] px-12 py-4 rounded-lg font-bold text-white text-xl">
+            Say Hello
+          </button>
         </div>
         <div className="w-1/2 relative flex justify-center items-center">
           <img
