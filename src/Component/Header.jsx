@@ -41,18 +41,19 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <section className="flex min-h-screen">
-        <div className="w-1/2 bg-white flex flex-col justify-center items-start px-3">
-          <h2 className="text-9xl font-bold text-[#2e2e37]">James Smith</h2>
+      <section className="flex min-h-[95vh]">
+        <div className="w-1/2 bg-white flex flex-col space-y-4 justify-center items-start px-3">
+          <h2 className="text-9xl mt-8 font-bold text-[#2e2e37]">James Smith</h2>
           <p className="text-3xl text-[#555664] mt-2">
             Senior Web Developer and Designer <br /> from the heart of New York
           </p>
+          <button className="mt-6 bg-[#98c949] px-12 py-4 rounded-lg font-bold text-white text-xl">Say Hello</button>
         </div>
-        <div className="w-1/2 bg-[#1f1e1d] relative flex justify-center items-center">
+        <div className="w-1/2 relative flex justify-center items-center">
           <img
             src={smith}
             alt="Smith"
-            className="absolute bottom-[-45px] w-full"
+            className="absolute bottom-[-75px] w-full"
           />
           <Socials />
         </div>
