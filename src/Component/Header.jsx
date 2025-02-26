@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <nav>
           <ul
-            className={`flex gap-8 text-lg font-medium transition-all duration-300 ${
+            className={`flex gap-8 text-lg transition-all duration-300 ${
               isScrolled ? "text-black" : "text-white"
             }`}
           >
@@ -43,7 +43,13 @@ const Header = () => {
         </nav>
       </header>
       <section className="flex min-h-[95vh]">
-        <div className="w-1/2 bg-white flex flex-col space-y-4 justify-center items-start px-3">
+        <div className="w-1/2 bg-white flex flex-col space-y-4 justify-center items-start px-3 relative">
+          <div
+            className="absolute top-[20%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 animate-bounce"
+            style={{ zIndex: 10 }}
+          >
+            <img src={shape1} alt="Shape" className="w-12 h-12" />
+          </div>
           <h2 className="text-9xl mt-8 font-bold text-[#2e2e37]">
             James Smith
           </h2>
