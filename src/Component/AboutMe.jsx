@@ -1,5 +1,6 @@
 import aboutMe from "../assets/about-img-2.jpg";
 import signature from "../assets/signature-3.png";
+import shape2 from "../assets/shape2.png";
 
 const AboutMe = () => {
   return (
@@ -21,7 +22,10 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="w-1/2 p-6 flex flex-col justify-center">
-        <h3 className="text-2xl text-[#98c949] font-bold">About Me</h3>
+        <div className="flex justify-between items-center">
+          <h3 className="text-2xl text-[#98c949] font-bold">About Me</h3>
+          <img src={shape2} alt="shape2" className="animate-bounce" />
+        </div>
         <h2 className="text-6xl font-bold text-[#2e2e37] mt-4">
           I Develop Systems that Work
         </h2>
