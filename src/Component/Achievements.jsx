@@ -1,15 +1,16 @@
 import lily from "../assets/lily.png";
 import sone from "../assets/sone.png";
 import vant from "../assets/vant.png";
+import Education from "./Education";
 import Experience from "./Experience";
 const Achievements = () => {
   return (
     <div>
-      <div className="bg-[#f0f9fa] py-32 my-44">
+      <div className="bg-[#f0f9fa] py-32 mt-44">
         <h4 className="text-[#98c954] text-2xl font-semibold text-center">
           Success Stories
         </h4>
-        <h1 className="font-bold text-center text-7xl text-[#2e2e37">
+        <h1 className="font-bold text-center text-7xl text-[#2e2e37]">
           Awards & Achievements
         </h1>
         <div className="px-3 my-10">
@@ -58,6 +59,7 @@ const Achievements = () => {
         </div>
       </div>
       <Experience />
+      <Education />
     </div>
   );
 };
