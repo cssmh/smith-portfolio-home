@@ -21,7 +21,7 @@ const Education = () => {
           <div className="mt-8 space-y-8">
             <div className="flex items-start gap-6">
               <div className="bg-[#98c949] w-16 rounded-lg p-4 text-white text-3xl">
-                <PiGraduationCap />
+                <PiGraduationCap className="hover:animate-bounce transition-transform duration-300" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#2e2e37]">
@@ -38,7 +38,7 @@ const Education = () => {
             </div>
             <div className="flex items-start gap-6">
               <div className="bg-[#98c949] w-16 rounded-lg p-4 text-white text-3xl">
-                <PiGraduationCap className="hover:animate-spin" />
+                <PiGraduationCap className="hover:animate-bounce transition-transform duration-300" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#2e2e37]">
@@ -53,7 +53,7 @@ const Education = () => {
             </div>
             <div className="flex items-start gap-6">
               <div className="bg-[#98c949] w-16 rounded-lg p-4 text-white text-3xl">
-                <PiGraduationCap />
+                <PiGraduationCap className="hover:animate-bounce transition-transform duration-300" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#2e2e37]">

@@ -17,12 +17,14 @@ const Experience = () => {
         </p>
         <div className="flex items-center gap-4">
           <div className="bg-[#98c949] w-16 rounded-lg p-4 text-white text-3xl">
-            <IoBagHandleOutline />
+            <IoBagHandleOutline className="hover:animate-bounce transition-transform duration-300" />
           </div>
           <div>
             <h1 className="text-2xl">
               Senior System Engineer <br /> eThemeStudio
-              <span className="text-base text-gray-500">( 2018 - Running )</span>
+              <span className="text-base text-gray-500">
+                ( 2018 - Running )
+              </span>
             </h1>
             <p className="text-gray-500 text-lg">
               Ludantium totam rem aperia meaque ipsa quae ab illo inven tore
@@ -32,12 +34,14 @@ const Experience = () => {
         </div>
         <div className="flex items-center gap-4">
           <div className="bg-[#98c949] w-16 rounded-lg p-4 text-white text-3xl">
-            <IoBagHandleOutline />
+            <IoBagHandleOutline className="hover:animate-bounce transition-transform duration-300" />
           </div>
           <div>
             <h1 className="text-2xl">
               Senior System Engineer <br /> eThemeStudio
-              <span className="text-base text-gray-500">( 2018 - Running )</span>
+              <span className="text-base text-gray-500">
+                ( 2018 - Running )
+              </span>
             </h1>
             <p className="text-gray-500 text-lg">
               Ludantium totam rem aperia meaque ipsa quae ab illo inven tore
@@ -47,12 +51,14 @@ const Experience = () => {
         </div>
         <div className="flex items-center gap-4">
           <div className="bg-[#98c949] w-16 rounded-lg p-4 text-white text-3xl">
-            <IoBagHandleOutline />
+            <IoBagHandleOutline className="hover:animate-bounce transition-transform duration-300" />
           </div>
           <div>
             <h1 className="text-2xl">
               Senior System Engineer <br /> eThemeStudio
-              <span className="text-base text-gray-500">( 2018 - Running )</span>
+              <span className="text-base text-gray-500">
+                ( 2018 - Running )
+              </span>
             </h1>
             <p className="text-gray-500 text-lg">
               Ludantium totam rem aperia meaque ipsa quae ab illo inven tore

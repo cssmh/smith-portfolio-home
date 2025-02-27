@@ -3,6 +3,7 @@ import sone from "../assets/sone.png";
 import vant from "../assets/vant.png";
 import Education from "./Education";
 import Experience from "./Experience";
+import MySkill from "./MySkill";
 const Achievements = () => {
   return (
     <div>
@@ -60,6 +61,7 @@ const Achievements = () => {
       </div>
       <Experience />
       <Education />
+      <MySkill />
     </div>
   );
 };
