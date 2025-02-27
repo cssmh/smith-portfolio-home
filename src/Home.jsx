@@ -1,5 +1,6 @@
 import AboutMe from "./Component/AboutMe";
 import Achievements from "./Component/Achievements";
+import ContactMe from "./Component/ContactMe";
 import Count from "./Component/Count";
 import Header from "./Component/Header";
 import MyWorks from "./Component/MyWorks";
@@ -18,6 +19,7 @@ const Home = () => {
       <Plans />
       <Service />
       <PeopleSay />
+      <ContactMe />
     </>
   );
 };
