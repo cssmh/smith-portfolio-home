@@ -25,7 +25,7 @@ const Header = () => {
         }`}
       >
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Logo" className="h-9" />
+          <img src={logo} alt="Logo" className="h-8" />
         </div>
         <nav>
           <ul
