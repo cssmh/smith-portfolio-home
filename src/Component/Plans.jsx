@@ -52,12 +52,16 @@ const Plans = () => {
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
         {pricingPlans.map((plan, index) => (
-          <div key={index} className="bg-white rounded-lg p-8 transition-all">
+          <div
+            key={index}
+            className="bg-white rounded-lg p-8 transition-all transform hover:-translate-y-2 hover:shadow-lg"
+          >
             <h2 className="text-3xl font-semibold text-[#2e2e37]">
               {plan.title}
             </h2>
             <p className="text-5xl font-semibold text-[#98c949] my-4">
-              {plan.price} <span className="text-lg text-black">{plan.time}</span>
+              {plan.price}{" "}
+              <span className="text-lg text-black">{plan.time}</span>
             </p>
             <ul className="text-gray-600 space-y-3 text-lg">
               {plan.features.map((feature, i) => (
