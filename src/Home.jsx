@@ -1,5 +1,5 @@
 import AboutMe from "./Component/AboutMe";
-import Achivements from "./Component/Achivements";
+import Achievements from "./Component/Achievements";
 import Count from "./Component/Count";
 import Header from "./Component/Header";
 import MyWorks from "./Component/MyWorks";
@@ -11,7 +11,7 @@ const Home = () => {
       <AboutMe />
       <Count />
       <MyWorks />
-      <Achivements />
+      <Achievements />
     </>
   );
 };
