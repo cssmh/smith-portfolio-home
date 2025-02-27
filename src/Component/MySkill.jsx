@@ -5,13 +5,21 @@ const MySkill = () => {
     <div className="px-3 py-16">
       <div className="flex flex-col md:flex-row gap-12 items-center">
         <div className="flex-1">
-          <div className="flex justify-between items-center">
-            <h1 className="text-[#98c949] text-2xl font-semibold">My Skill</h1>
-            <img src={shape3} alt="shape3" className="animate-bounce" />
+          <h1 className="text-[#98c949] text-2xl font-semibold">My Skill</h1>
+          <div className="relative">
+            <h2 className="text-7xl font-semibold text-[#2e2e37] mt-4">
+              Growing{" "}
+              <span className="relative">
+                Over
+                <img
+                  src={shape3}
+                  alt="shape3"
+                  className="absolute -top-2 -right-12 animate-bounce"
+                />
+              </span>{" "}
+              <br /> Times
+            </h2>
           </div>
-          <h2 className="text-7xl font-semibold text-[#2e2e37] mt-4">
-            Growing Over <br /> Times
-          </h2>
         </div>
         <div className="flex-1 flex justify-center gap-8">
           <div>
