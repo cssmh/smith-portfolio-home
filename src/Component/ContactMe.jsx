@@ -1,4 +1,7 @@
+/* eslint-disable react/prop-types */
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 const ContactMe = () => {
   return (
@@ -11,86 +14,70 @@ const ContactMe = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="space-y-6">
-          <div className="flex items-center gap-4">
-            <div className="bg-[#98c949] p-6 rounded-full text-white">
-              <FaMapMarkerAlt className="text-2xl" />
-            </div>
-            <div>
-              <p className="text-lg font-semibold text-[#2e2e37]">Location</p>
-              <p className="text-gray-600">20 Bordeshi, London, Usa</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="bg-[#98c949] p-6 rounded-full text-white">
-              <FaPhone className="text-2xl" />
-            </div>
-            <div>
-              <p className="text-lg font-semibold text-[#2e2e37]">Phone</p>
-              <p className="text-gray-600">+123 456 7890</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="bg-[#98c949] p-6 rounded-full text-white">
-              <FaEnvelope className="text-2xl" />
-            </div>
-            <div>
-              <p className="text-lg font-semibold text-[#2e2e37]">Email</p>
-              <p className="text-gray-600">hello@hibro.com</p>
-            </div>
-          </div>
+          <ContactItem
+            icon={<FaMapMarkerAlt />}
+            title="Location"
+            text="20 Bordeshi, London, USA"
+          />
+          <ContactItem icon={<FaPhone />} title="Phone" text="+123 456 7890" />
+          <ContactItem
+            icon={<FaEnvelope />}
+            title="Email"
+            text="hello@hibro.com"
+          />
         </div>
         <div className="bg-white rounded-lg">
           <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div>
-                <input
-                  type="tel"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
-                  placeholder="Enter your phone"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
-                  placeholder="Enter your subject"
-                />
-              </div>
+              <InputField type="text" placeholder="Enter your name" />
+              <InputField type="email" placeholder="Enter your email" />
+              <InputField type="tel" placeholder="Enter your phone" />
+              <InputField type="text" placeholder="Enter your subject" />
             </div>
-            <div>
-              <textarea
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
-                rows="5"
-                placeholder="Start writing message here"
-              ></textarea>
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="bg-[#98c949] text-white px-12 py-3 rounded-lg font-semibold hover:bg-[#85b53d] transition-all"
-              >
-                Submit Now
-              </button>
-            </div>
+            <textarea
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
+              rows="5"
+              placeholder="Start writing message here"
+            ></textarea>
+            <button className="bg-[#98c949] text-white px-12 py-3 rounded-lg font-semibold hover:bg-[#85b53d] transition-all">
+              Submit Now
+            </button>
           </form>
+        </div>
+      </div>
+      <div className="mt-16">
+        <div className="relative h-80">
+          <MapContainer
+            center={[51.505, -0.09]}
+            zoom={13}
+            className="h-full w-full rounded-lg"
+          >
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          </MapContainer>
         </div>
       </div>
     </div>
   );
 };
+
+const ContactItem = ({ icon, title, text }) => (
+  <div className="flex items-center gap-4">
+    <div className="bg-[#98c949] p-6 rounded-full text-white text-2xl">
+      {icon}
+    </div>
+    <div>
+      <p className="text-lg font-semibold text-[#2e2e37]">{title}</p>
+      <p className="text-gray-600">{text}</p>
+    </div>
+  </div>
+);
+
+const InputField = ({ type, placeholder }) => (
+  <input
+    type={type}
+    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#98c949]"
+    placeholder={placeholder}
+  />
+);
 
 export default ContactMe;
