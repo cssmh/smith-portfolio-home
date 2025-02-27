@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import myworks1 from "../assets/portfolio-img1.jpg";
 import myworks2 from "../assets/portfolio-img2.jpg";
 import myworks3 from "../assets/portfolio-img3.jpg";
@@ -11,29 +12,34 @@ const MyWorks = () => {
 
   const images = [
     {
+      id: 1,
       src: myworks1,
       category: "Web Design",
-      description: "When the music's over, turn off the light",
+      description: "Creative Concept 1",
     },
     {
+      id: 2,
       src: myworks2,
       category: "Development",
-      description: "When the music's over, turn off the light",
+      description: "Full-Stack Solution",
     },
     {
+      id: 3,
       src: myworks3,
       category: "Photography",
-      description: "When the music's over, turn off the light",
+      description: "Captured Moments",
     },
     {
+      id: 4,
       src: myworks4,
       category: "Web Design",
-      description: "When the music's over, turn off the light",
+      description: "Modern UI Approach",
     },
     {
+      id: 5,
       src: myworks5,
       category: "Development",
-      description: "When the music's over, turn off the light",
+      description: "Scalable Systems",
     },
   ];
 
@@ -49,68 +55,53 @@ const MyWorks = () => {
         <h2 className="text-7xl font-semibold text-[#2e2e37]">My Works</h2>
       </div>
       <div className="mb-9 flex justify-center gap-8">
-        <button
-          onClick={() => setSelectedCategory("All")}
-          className={`px-6 py-2 text-lg font-semibold ${
-            selectedCategory === "All" ? "text-[#98c949]" : "text-gray-600"
-          }`}
-        >
-          All
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Web Design")}
-          className={`px-6 py-2 text-lg font-semibold ${
-            selectedCategory === "Web Design"
-              ? "text-[#98c949]"
-              : "text-gray-600"
-          }`}
-        >
-          Web Design
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Development")}
-          className={`px-6 py-2 text-lg font-semibold ${
-            selectedCategory === "Development"
-              ? "text-[#98c949]"
-              : "text-gray-600"
-          }`}
-        >
-          Development
-        </button>
-        <button
-          onClick={() => setSelectedCategory("Photography")}
-          className={`px-6 py-2 text-lg font-semibold ${
-            selectedCategory === "Photography"
-              ? "text-[#98c949]"
-              : "text-gray-600"
-          }`}
-        >
-          Photography
-        </button>
-      </div>
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
-        {filteredImages.map((image, index) => (
-          <div
-            key={index}
-            className="mb-4 relative group overflow-hidden rounded-lg shadow-lg"
+        {["All", "Web Design", "Development", "Photography"].map((category) => (
+          <button
+            key={category}
+            onClick={() => setSelectedCategory(category)}
+            className={`px-6 py-2 text-lg font-semibold transition-colors duration-300 ${
+              selectedCategory === category ? "text-[#98c949]" : "text-gray-600"
+            }`}
           >
-            <img
-              src={image.src}
-              alt={`Gallery Image ${index + 1}`}
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-[#9ecc54] bg-opacity-100 opacity-0 group-hover:opacity-40 transition-opacity duration-300 flex flex-col justify-end p-6">
-              <div className="self-end relative -top-50">
-                <FaArrowUpRightFromSquare className="text-white text-4xl opacity-100" />
-              </div>
-              <p className="text-white text-lg font-semibold mt-4 opacity-100">
-                {image.description}
-              </p>
-              <p className="text-white text-sm opacity-100">{image.category}</p>
-            </div>
-          </div>
+            {category}
+          </button>
         ))}
       </div>
+      <motion.div
+        layout
+        className="columns-1 md:columns-2 lg:columns-3 space-y-5"
+      >
+        <AnimatePresence>
+          {filteredImages.map((image) => (
+            <motion.div
+              key={image.id}
+              layout
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="relative group overflow-hidden rounded-lg shadow-lg"
+            >
+              <img
+                src={image.src}
+                alt={image.description}
+                className="w-full h-auto transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-[#9ecc54] bg-opacity-100 opacity-0 group-hover:opacity-40 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <div className="self-end relative">
+                  <FaArrowUpRightFromSquare className="text-white text-4xl opacity-100" />
+                </div>
+                <p className="text-white text-lg font-semibold mt-4 opacity-100">
+                  {image.description}
+                </p>
+                <p className="text-white text-sm opacity-100">
+                  {image.category}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 };
