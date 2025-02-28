@@ -23,13 +23,13 @@ const Header = () => {
   };
 
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen">
       <header
         className={`fixed top-0 w-full flex justify-between items-center px-3 ${
           isScrolled ? "py-5" : "py-5 md:py-10"
         } z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-lg py-4" : "bg-transparent"
-        } md:bg-transparent bg-white`}
+          isScrolled ? "bg-white shadow-lg py-4" : ""
+        }`}
       >
         <div className="flex items-center gap-4">
           <img src={logo} alt="Logo" className="h-8" />
