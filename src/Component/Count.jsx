@@ -24,6 +24,8 @@ const Count = () => {
   return (
     <div
       ref={countSectionRef}
+      data-aos="fade-up"
+      data-aos-duration="3000"
       className="min-h-[40vh] bg-[#37403d] flex items-center justify-center py-12 my-36"
     >
       <div className="container mx-auto text-center">

@@ -15,6 +15,8 @@ const AboutMe = () => {
           style={{ zIndex: 2 }}
         >
           <img
+            data-aos="fade-right"
+            data-aos-duration="2000"
             src={aboutMe}
             alt="About Me"
             className="w-3/4 h-auto object-cover"

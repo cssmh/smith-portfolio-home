@@ -21,7 +21,11 @@ const MySkill = () => {
             </h2>
           </div>
         </div>
-        <div className="flex-1 flex justify-center gap-8">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex-1 flex justify-center gap-8"
+        >
           <div>
             <div className="relative w-48 h-48">
               <div

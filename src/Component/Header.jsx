@@ -50,13 +50,17 @@ const Header = () => {
           >
             <img src={shape1} alt="Shape" className="w-12 h-12" />
           </div>
-          <h2 className="text-9xl mt-8 font-bold text-[#2e2e37]">
+          <h2 className="text-9xl mt-12 font-bold text-[#2e2e37]">
             James Smith
           </h2>
           <p className="text-3xl text-[#555664] mt-2">
             Senior Web Developer and Designer <br /> from the heart of New York
           </p>
-          <button className="mt-6 bg-[#98c949] px-12 py-4 rounded-lg font-bold text-white text-xl">
+          <button
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="mt-6 bg-[#98c949] px-12 py-4 rounded-lg font-bold text-white text-xl"
+          >
             Say Hello
           </button>
         </div>
