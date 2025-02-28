@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
