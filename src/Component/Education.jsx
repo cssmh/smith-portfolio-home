@@ -70,7 +70,7 @@ const Education = () => {
         </div>
         <div className="flex justify-center items-center">
           <img
-            data-aos="fade-right"
+            data-aos="zoom-in-left"
             data-aos-duration="3000"
             src={educationImg}
             alt="Education"

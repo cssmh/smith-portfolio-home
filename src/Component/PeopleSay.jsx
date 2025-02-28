@@ -65,7 +65,7 @@ const PeopleSay = () => {
             ))}
           </Swiper>
         </div>
-        <div className="md:w-1/2">
+        <div data-aos="zoom-in-left" data-aos-duration="1000" className="md:w-1/2">
           <img
             src={testimonial}
             alt="Testimonial"

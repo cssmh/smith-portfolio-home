@@ -1,6 +1,14 @@
+import { useEffect, useState } from "react";
+import CountUp from "react-countup";
 import shape3 from "../assets/shape3.png";
 
 const MySkill = () => {
+  const [startCount, setStartCount] = useState(false);
+
+  useEffect(() => {
+    setStartCount(true);
+  }, []);
+
   return (
     <div className="px-3 py-16">
       <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -23,7 +31,7 @@ const MySkill = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           className="flex-1 flex justify-center gap-8"
         >
           <div>
@@ -43,7 +51,9 @@ const MySkill = () => {
                 }}
               ></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-4xl font-semibold text-[#2e2e37]">90%</p>
+                <p className="text-4xl font-semibold text-[#2e2e37]">
+                  {startCount && <CountUp start={0} end={90} duration={4} />}%
+                </p>
               </div>
             </div>
             <p className="text-2xl font-medium text-center mt-3">
@@ -67,13 +77,17 @@ const MySkill = () => {
                 }}
               ></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-4xl font-semibold text-[#2e2e37]">75%</p>
+                <p className="text-4xl font-semibold text-[#2e2e37]">
+                  {startCount && <CountUp start={0} end={75} duration={4} />}%
+                </p>
               </div>
             </div>
             <p className="text-2xl font-medium text-center mt-3">
               System Application
             </p>
           </div>
+
+          {/* Data Administration */}
           <div>
             <div className="relative w-48 h-48">
               <div
@@ -91,7 +105,9 @@ const MySkill = () => {
                 }}
               ></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-4xl font-semibold text-[#2e2e37]">85%</p>
+                <p className="text-4xl font-semibold text-[#2e2e37]">
+                  {startCount && <CountUp start={0} end={85} duration={4} />}%
+                </p>
               </div>
             </div>
             <p className="text-2xl font-medium text-center mt-3">

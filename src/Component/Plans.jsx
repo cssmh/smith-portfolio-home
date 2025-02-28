@@ -54,6 +54,8 @@ const Plans = () => {
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-duration="1000"
             className="bg-white rounded-lg p-8 transition-all transform hover:-translate-y-2 hover:shadow-lg"
           >
             <h2 className="text-3xl font-semibold text-[#2e2e37]">

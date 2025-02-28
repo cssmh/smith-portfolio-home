@@ -25,7 +25,11 @@ const ContactMe = () => {
             text="hello@hibro.com"
           />
         </div>
-        <div className="bg-white rounded-lg">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="bg-white rounded-lg"
+        >
           <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <InputField type="text" placeholder="Enter your name" />
@@ -44,7 +48,7 @@ const ContactMe = () => {
           </form>
         </div>
       </div>
-      <div className="mt-16">
+      <div data-aos="fade-up" data-aos-duration="1000" className="mt-16">
         <div className="relative h-80">
           <MapContainer
             center={[51.505, -0.09]}

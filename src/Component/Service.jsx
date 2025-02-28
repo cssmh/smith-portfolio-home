@@ -43,6 +43,8 @@ const Service = () => {
         {services.map((service, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-duration={400 * index}
             className="flex items-center gap-6 shadow-md bg-white px-6 py-16 rounded-lg transition-shadow duration-300"
           >
             <div className="w-20 h-20 flex-shrink-0">
