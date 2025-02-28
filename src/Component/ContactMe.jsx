@@ -7,7 +7,7 @@ const ContactMe = () => {
     <div className="px-3 py-16">
       <div className="text-center mb-12">
         <h4 className="text-[#98c949] text-2xl font-semibold">Contact Me</h4>
-        <h2 className="text-7xl font-semibold text-[#2e2e37] mt-4">
+        <h2 className="text-3xl md:text-7xl font-semibold text-[#2e2e37] mt-4">
           Let&apos;s Start A New Project
         </h2>
       </div>

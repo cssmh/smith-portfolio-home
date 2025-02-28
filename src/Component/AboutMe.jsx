@@ -4,14 +4,14 @@ import shape2 from "../assets/shape2.png";
 
 const AboutMe = () => {
   return (
-    <div className="flex min-h-screen font-sans mt-40 mb-16">
-      <div className="w-1/2 relative">
+    <div className="flex flex-col md:flex-row min-h-screen font-sans mt-40 mb-16">
+      <div className="w-full md:w-1/2 relative">
         <div
-          className="absolute top-[293px] left-5 w-3/5 h-3/5 rounded-lg bg-[#98c949]"
+          className="md:absolute md:top-[293px] md:left-5 md:w-3/5 md:h-3/5 rounded-lg bg-[#98c949]"
           style={{ zIndex: 1 }}
         ></div>
         <div
-          className="absolute top-0 left-0 w-full h-full flex justify-center items-center"
+          className="md:absolute top-0 left-0 w-full h-full flex justify-center items-center"
           style={{ zIndex: 2 }}
         >
           <img
@@ -23,12 +23,12 @@ const AboutMe = () => {
           />
         </div>
       </div>
-      <div className="w-1/2 p-6 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 p-6 flex flex-col justify-center">
         <div className="flex justify-between items-center">
           <h3 className="text-2xl text-[#98c949] font-bold">About Me</h3>
           <img src={shape2} alt="shape2" className="animate-bounce" />
         </div>
-        <h2 className="text-6xl font-bold text-[#2e2e37] mt-4">
+        <h2 className="text-3xl md:text-6xl font-bold text-[#2e2e37] mt-4">
           I Develop Systems that Work
         </h2>
         <p className="text-gray-700 mt-6">
@@ -38,7 +38,7 @@ const AboutMe = () => {
           accusantium doloremque laudantium, totam rem aperia m, eaque ipsa quae
           ab illo inven tore veritatis et quasi architecto beatae vitae.
         </p>
-        <div className="grid grid-cols-4 gap-2 mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-8">
           <p className="text-lg font-bold text-[#2e2e37]">Name</p>
           <p className="text-[#2e2e37]">James Smith</p>
           <p className="text-lg font-bold text-[#2e2e37]">Age</p>

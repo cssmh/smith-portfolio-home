@@ -43,10 +43,10 @@ const Plans = () => {
   return (
     <div className="pt-16 pb-32 px-4 bg-[#f0f9fa]">
       <div className="text-center">
-        <h1 className="text-[#98c954] text-2xl font-semibold text-center">
+        <h1 className="text-[#98c954] text-lg md:text-2xl font-semibold text-center">
           Let’s Start Working
         </h1>
-        <p className="font-bold text-center text-7xl text-[#2e2e37]">
+        <p className="font-bold text-center text-3xl md:text-7xl text-[#2e2e37]">
           Pricing Plans
         </p>
       </div>

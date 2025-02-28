@@ -18,9 +18,9 @@ const blogData = [
 
 const RecentBlog = () => {
   return (
-    <div className="mt-20 py-32 bg-[#f0f9fa] px-3">
+    <div className="mt-20 py-16 md:py-32 bg-[#f0f9fa] px-3">
       <h4 className="text-[#98c949] text-2xl font-semibold">Get Updates</h4>
-      <h2 className="text-7xl font-semibold text-[#2e2e37] mt-4">
+      <h2 className="text-3xl md:text-7xl font-semibold text-[#2e2e37] mt-4">
         Recent Blog
       </h2>
       <div className="mt-12">

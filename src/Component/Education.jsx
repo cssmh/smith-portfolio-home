@@ -11,7 +11,7 @@ const Education = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h4 className="text-[#98c949] text-2xl font-semibold">Education</h4>
-          <h2 className="text-5xl font-bold text-[#2e2e37] mt-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#2e2e37] mt-4">
             My Education
           </h2>
           <p className="text-lg text-gray-600 mt-6">

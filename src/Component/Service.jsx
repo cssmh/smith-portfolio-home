@@ -35,7 +35,7 @@ const Service = () => {
     <div className="px-3 py-16 bg-[#fffffd]">
       <div className="text-center mb-12">
         <h1 className="text-[#98c949] text-2xl font-semibold">Service</h1>
-        <h2 className="text-7xl font-semibold text-[#2e2e37] mt-4">
+        <h2 className="text-3xl md:text-7xl font-semibold text-[#2e2e37] mt-4">
           What I Do
         </h2>
       </div>
@@ -45,7 +45,7 @@ const Service = () => {
             key={index}
             data-aos="fade-up"
             data-aos-duration={400 * index}
-            className="flex items-center gap-6 shadow-md bg-white px-6 py-16 rounded-lg transition-shadow duration-300"
+            className="flex items-center gap-6 shadow-md bg-white px-6 py-10 md:py-16 rounded-lg transition-shadow duration-300"
           >
             <div className="w-20 h-20 flex-shrink-0">
               <img

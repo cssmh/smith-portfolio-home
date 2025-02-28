@@ -54,7 +54,7 @@ const MyWorks = () => {
         <p className="text-2xl text-[#98c949] font-bold mb-4">Portfolio</p>
         <h2 className="text-7xl font-semibold text-[#2e2e37]">My Works</h2>
       </div>
-      <div className="mb-9 flex justify-center gap-8">
+      <div className="mb-9 flex flex-col md:flex-row justify-center gap-8">
         {["All", "Web Design", "Development", "Photography"].map((category) => (
           <button
             key={category}
@@ -69,7 +69,7 @@ const MyWorks = () => {
       </div>
       <motion.div
         layout
-        className="columns-1 md:columns-2 lg:columns-3 space-y-5"
+        className="columns-1 md:columns-2 lg:columns-3 md:space-y-5"
       >
         <AnimatePresence>
           {filteredImages.map((image) => (

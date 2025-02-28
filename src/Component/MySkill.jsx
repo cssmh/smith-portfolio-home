@@ -15,7 +15,7 @@ const MySkill = () => {
         <div className="flex-1">
           <h1 className="text-[#98c949] text-2xl font-semibold">My Skill</h1>
           <div className="relative">
-            <h2 className="text-7xl font-semibold text-[#2e2e37] mt-4">
+            <h2 className="text-3xl md:text-7xl font-semibold text-[#2e2e37] mt-4">
               Growing{" "}
               <span className="relative">
                 Over
@@ -32,7 +32,7 @@ const MySkill = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="flex-1 flex justify-center gap-8"
+          className="flex-1 flex flex-col md:flex-row justify-center gap-8"
         >
           <div>
             <div className="relative w-48 h-48">

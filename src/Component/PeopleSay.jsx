@@ -29,8 +29,8 @@ const reviews = [
 const PeopleSay = () => {
   return (
     <div>
-      <div className="py-32 mt-16 px-3 bg-[#f0f9fa] flex flex-col md:flex-row items-center gap-12">
-        <div className="md:w-1/2">
+      <div className="py-16 md:py-32 mt-16 px-3 bg-[#f0f9fa] flex flex-col md:flex-row items-center gap-12">
+        <div className="w-full md:w-1/2">
           <h2 className="text-[#98c954] text-2xl font-semibold">
             Testimonials
           </h2>
@@ -65,7 +65,11 @@ const PeopleSay = () => {
             ))}
           </Swiper>
         </div>
-        <div data-aos="zoom-in-left" data-aos-duration="1000" className="md:w-1/2">
+        <div
+          className="w-full md:w-1/2"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+        >
           <img
             src={testimonial}
             alt="Testimonial"
