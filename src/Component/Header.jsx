@@ -40,12 +40,12 @@ const Header = () => {
               isScrolled ? "text-black" : "text-white"
             }`}
           >
-            <li className="hover:text-gray-400 cursor-pointer">Home</li>
-            <li className="hover:text-gray-400 cursor-pointer">About</li>
-            <li className="hover:text-gray-400 cursor-pointer">Works</li>
-            <li className="hover:text-gray-400 cursor-pointer">Services</li>
-            <li className="hover:text-gray-400 cursor-pointer">Contact</li>
-            <li className="hover:text-gray-400 cursor-pointer">Blog</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Home</li>
+            <li className="hover:text-[#98c949] cursor-pointer">About</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Works</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Services</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Contact</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Blog</li>
           </ul>
         </nav>
         <button onClick={toggleMobileMenu} className="md:hidden text-2xl">
@@ -67,12 +67,12 @@ const Header = () => {
             <FaTimes />
           </button>
           <ul className="space-y-6 text-white">
-            <li className="hover:text-gray-400 cursor-pointer">Home</li>
-            <li className="hover:text-gray-400 cursor-pointer">About</li>
-            <li className="hover:text-gray-400 cursor-pointer">Works</li>
-            <li className="hover:text-gray-400 cursor-pointer">Services</li>
-            <li className="hover:text-gray-400 cursor-pointer">Contact</li>
-            <li className="hover:text-gray-400 cursor-pointer">Blog</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Home</li>
+            <li className="hover:text-[#98c949] cursor-pointer">About</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Works</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Services</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Contact</li>
+            <li className="hover:text-[#98c949] cursor-pointer">Blog</li>
           </ul>
         </motion.div>
       )}
