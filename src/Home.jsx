@@ -2,6 +2,7 @@ import AboutMe from "./Component/AboutMe";
 import Achievements from "./Component/Achievements";
 import ContactMe from "./Component/ContactMe";
 import Count from "./Component/Count";
+import Footer from "./Component/Footer";
 import Header from "./Component/Header";
 import MyWorks from "./Component/MyWorks";
 import PeopleSay from "./Component/PeopleSay";
@@ -22,6 +23,7 @@ const Home = () => {
       <PeopleSay />
       <ContactMe />
       <RecentBlog />
+      <Footer />
     </>
   );
 };
