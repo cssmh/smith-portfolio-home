@@ -31,7 +31,7 @@ const MySkill = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           className="flex-1 flex flex-col md:flex-row justify-center gap-8"
         >
           <div>

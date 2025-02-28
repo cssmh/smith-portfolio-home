@@ -34,7 +34,7 @@ const PeopleSay = () => {
           <h2 className="text-[#98c954] text-2xl font-semibold">
             Testimonials
           </h2>
-          <p className="font-bold text-7xl text-[#2e2e37] mb-6">
+          <p className="font-bold text-3xl md:text-7xl text-[#2e2e37] mb-6">
             What People Say
           </p>
           <Swiper
