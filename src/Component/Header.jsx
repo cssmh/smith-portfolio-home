@@ -4,6 +4,7 @@ import logo from "../assets/logo-2.png";
 import smith from "../assets/slider-img.jpg";
 import shape1 from "../assets/shape1.png";
 import Socials from "./Socials";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,10 +26,10 @@ const Header = () => {
     <div className="min-h-screen font-sans">
       <header
         className={`fixed top-0 w-full flex justify-between items-center px-3 ${
-          isScrolled ? "py-5" : "py-10"
+          isScrolled ? "py-5" : "py-5 md:py-10"
         } z-50 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-lg py-4" : "bg-transparent"
-        }`}
+        } md:bg-transparent bg-white`}
       >
         <div className="flex items-center gap-4">
           <img src={logo} alt="Logo" className="h-8" />
@@ -52,7 +53,13 @@ const Header = () => {
         </button>
       </header>
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-[#b5d87c] p-6">
+        <motion.div
+          className="fixed inset-0 z-50 bg-[#b5d87c] p-6"
+          initial={{ x: "-100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "-100%" }}
+          transition={{ type: "tween", duration: 0.4 }}
+        >
           <button
             onClick={toggleMobileMenu}
             className="absolute top-6 right-6 text-white text-2xl"
@@ -67,7 +74,7 @@ const Header = () => {
             <li className="hover:text-gray-400 cursor-pointer">Contact</li>
             <li className="hover:text-gray-400 cursor-pointer">Blog</li>
           </ul>
-        </div>
+        </motion.div>
       )}
       <section className="flex flex-col-reverse md:flex-row min-h-[95vh]">
         <div className="w-full md:w-1/2 bg-white flex flex-col space-y-4 justify-center items-start px-3 relative">
