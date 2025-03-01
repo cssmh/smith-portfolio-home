@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <div className="min-h-screen">
       <header
-        className={`fixed top-0 w-full flex justify-between items-center px-3 ${
+        className={`fixed px-28 top-0 w-full flex justify-between items-center ${
           isScrolled ? "py-5" : "py-5 md:py-10"
         } z-50 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-lg py-4" : ""
@@ -76,7 +76,7 @@ const Header = () => {
           </ul>
         </motion.div>
       )}
-      <section className="flex flex-col-reverse md:flex-row min-h-[95vh]">
+      <section className="flex flex-col-reverse md:flex-row min-h-[95vh] pl-28">
         <div className="w-full md:w-1/2 bg-white flex flex-col space-y-4 justify-center items-start px-3 relative">
           <div
             className="absolute top-[20%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 animate-bounce"
@@ -84,7 +84,7 @@ const Header = () => {
           >
             <img src={shape1} alt="Shape" className="w-12 h-12" />
           </div>
-          <h2 className="text-5xl md:text-9xl mt-12 font-bold text-[#2e2e37]">
+          <h2 className="text-5xl md:text-9xl mt-12 font-semibold text-[#2e2e37]">
             James Smith
           </h2>
           <p className="text-xl md:text-3xl text-[#555664] mt-2">

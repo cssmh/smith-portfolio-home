@@ -12,19 +12,21 @@ import Service from "./Component/Service";
 
 const Home = () => {
   return (
-    <>
+    <div className="font-play">
       <Header />
-      <AboutMe />
-      <Count />
-      <MyWorks />
-      <Achievements />
-      <Plans />
-      <Service />
-      <PeopleSay />
-      <ContactMe />
-      <RecentBlog />
-      <Footer />
-    </>
+      <main className="max-w-[1024px] mx-auto">
+        <AboutMe />
+        <Count />
+        <MyWorks />
+        <Achievements />
+        <Plans />
+        <Service />
+        <PeopleSay />
+        <ContactMe />
+        <RecentBlog />
+        <Footer />
+      </main>
+    </div>
   );
 };
 
