@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="font-play">
       <Header />
-      <main className="max-w-[1024px] mx-auto">
+      <main className="container mx-auto">
         <AboutMe />
         <Count />
         <MyWorks />
